@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Editar ciudad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="form_ciudad">
+        <h1> Agregar ciudad </h1>
+        <form method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" value="Bahía Blanca" required>
+            </div>
+
+            <div class="form-group">
+                <label for="habitantes">Habitantes:</label>
+                <input type="number" name="habitantes" value="336574" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coordenadas">Coordenadas:</label>
+                <input type="text" pattern="-?\d+(\.\d+)?, -?\d+(\.\d+)?" name="coordenadas" value="38.71834, -62.26530"> <!-- ej: -1.22, 2,37 -->
+            </div>
+            <div class="form-group">
+                <label for="mapa">Link google maps:</label>
+                <input type="url" name="mapa" value="https://maps.app.goo.gl/kJoJA2riJW7GV74L7" required>
+            </div>
+            <input type="submit" value="Editar">
+        </form>
+    </div>
+</body>
+
+</html>

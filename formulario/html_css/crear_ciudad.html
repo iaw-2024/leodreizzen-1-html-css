@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Agregar ciudad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="form_ciudad">
+        <h1> Agregar ciudad </h1>
+        <form method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="habitantes">Habitantes:</label>
+                <input type="number" name="habitantes" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coordenadas">Coordenadas:</label>
+                <input type="text" pattern="-?\d+(\.\d+)?, -?\d+(\.\d+)?" name="coordenadas"> <!-- ej: -1.22, 2,37 -->
+            </div>
+            <div class="form-group">
+                <label for="mapa">Link google maps:</label>
+                <input type="url" name="mapa" value="https://" required>
+            </div>
+            <input type="submit" value="Agregar">
+        </form>
+    </div>
+</body>
+
+</html>
