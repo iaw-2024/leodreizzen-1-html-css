@@ -1,9 +1,13 @@
 body {
     background-color: rgb(223, 249, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
 h1 {
-    margin: 10px 0;
+    margin: 1vh 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
 }
@@ -16,11 +20,11 @@ h1 {
 
 
 .item-listado {
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
-    margin-bottom: 20px;
+    box-shadow: 0 0 1vh 0 rgba(0, 0, 0, 0.75);
+    border-radius: 0.7vh;
+    margin-bottom: 2vh;
     background-color: rgb(250, 250, 160);
-    padding: 5px 12px 5px 12px;
+    padding: 0.6vh 1vw 0.5vh 0.7vw;
 }
 
 .item-listado a{
@@ -35,7 +39,7 @@ h1 {
 .item-listado h2 {
     font-weight: 500;
     margin: 0 0 2px 0;
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
 .item-listado strong {
