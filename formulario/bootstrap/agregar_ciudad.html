@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Agregar ciudad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="container" style="background-color: rgb(223, 249, 255);">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 card" style="background-color: rgb(250, 250, 160)">
+            <div class="card-body p-2">
+                <h1 class="text-center fs-2 mb-3">Agregar ciudad</h1>
+                <form method="post" class="">
+                    <div class="form-group row mb-2">
+                        <label for="nombre" class="col-form-label col-3">Nombre:</label>
+                        <div class="col-9">
+                            <input type="text" class="form-control rounded-pill" name="nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-2">
+                        <label for="habitantes" class="col-form-label col-3">Habitantes:</label>
+                        <div class="col-9">
+                            <input type="number" class="form-control rounded-pill" name="habitantes" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-2">
+                        <label for="coordenadas" class="col-form-label col-3">Coordenadas:</label>
+                        <div class="col-9">
+                            <input type="text" class="form-control rounded-pill" pattern="-?\d+(\.\d+)?, -?\d+(\.\d+)?"
+                                name="coordenadas">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-2">
+                        <label for="mapa" class="col-form-label col-3">Link google maps:</label>
+                        <div class="col-9">
+                            <input type="url" class="form-control rounded-pill" name="mapa" value="https://" required>
+                        </div>
+                    </div>
+
+                    <input class = "w-100" type="submit" value="Agregar">
+                </form>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
